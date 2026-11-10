@@ -114,7 +114,8 @@ class _PlaylistDetailScreenState extends ConsumerState<PlaylistDetailScreen> {
                     Expanded(
                       child: ReorderableListView.builder(
                         itemCount: _songs.length,
-                        onReorder: (oldIndex, newIndex) async { // ignore: deprecated_member_use
+                        // ignore: deprecated_member_use
+                        onReorder: (oldIndex, newIndex) async {
                           setState(() {
                             if (oldIndex < newIndex) newIndex -= 1;
                             final item = _songs.removeAt(oldIndex);

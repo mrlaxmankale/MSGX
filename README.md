@@ -120,3 +120,4 @@ Output locations:
 
 ## 📄 License
 MSGX is distributed under the MIT License.
+

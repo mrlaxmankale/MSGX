@@ -319,7 +319,8 @@ class NowPlayingScreen extends ConsumerWidget {
                       : ReorderableListView.builder(
                           scrollController: scrollController,
                           itemCount: queue.length,
-                          onReorder: (oldIndex, newIndex) { // ignore: deprecated_member_use
+                          // ignore: deprecated_member_use
+                          onReorder: (oldIndex, newIndex) {
                             playerService.reorderQueue(oldIndex, newIndex);
                           },
                           itemBuilder: (context, index) {
